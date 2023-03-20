@@ -1434,10 +1434,10 @@
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>5-element Vector{Float64}:
   1.2197981041108443
- -2.6262587710059595
+ -2.62625877100596
  -2.8573820474674845
- -2.4319346874291305
-  1.010866857715021
+ -2.4319346874291314
+  1.0108668577150213
 </code></pre></div>
 <p>Julia's arrays are very powerful, and you can learn more about what they can do <a href="https://docs.julialang.org/en/v1/manual/arrays/">here</a>.</p>
 <p><a id='CUDA-Arrays'></a></p>
@@ -1507,7 +1507,8 @@ Iteration 3 [0.19597391412112541, 0.6830945313415872, 0.6776220912718907, 0.6456
 </ol>
 <p><em>Slight Detour</em>: We have had several questions regarding if we will be considering any other AD system for the reverse-diff backend. For now we will stick to Zygote.jl, however once <a href="https://github.com/EnzymeAD/Enzyme.jl">Enzyme.jl</a> has support for custom rules and we have tested Lux extensively with it, we will make the switch.</p>
 <p>Even though, theoretically, a VJP (Vector-Jacobian product - reverse autodiff) and a JVP (Jacobian-Vector product - forward-mode autodiff) are similar—they compute a product of a Jacobian and a vector—they differ by the computational complexity of the operation. In short, when you have a large number of parameters (hence a wide matrix), a JVP is less efficient computationally than a VJP, and, conversely, a JVP is more efficient when the Jacobian matrix is a tall matrix.</p>
-<div class="highlight"><pre><span></span><code><span class="k">using</span><span class="w"> </span><span class="n">ComponentArrays</span><span class="p">,</span><span class="w"> </span><span class="n">ForwardDiff</span><span class="p">,</span><span class="w"> </span><span class="n">Zygote</span><span class="p">,</span><span class="w"> </span><span class="n">AbstractDifferentiation</span>
+<div class="highlight"><pre><span></span><code><span class="k">using</span><span class="w"> </span><span class="n">ComponentArrays</span><span class="p">,</span><span class="w"> </span><span class="n">ForwardDiff</span><span class="p">,</span><span class="w"> </span><span class="n">Zygote</span>
+<span class="k">import</span><span class="w"> </span><span class="n">AbstractDifferentiation</span><span class="w"> </span><span class="n">as</span><span class="w"> </span><span class="n">AD</span>
 </code></pre></div>
 <p><a id='Gradients'></a></p>
 <p><a id='Gradients-1'></a></p>
