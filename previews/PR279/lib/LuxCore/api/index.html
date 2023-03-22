@@ -21,7 +21,7 @@
         <link rel="next" href="../../../devdocs/style_guide/">
       
       <link rel="icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.2">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.3">
     
     
       
@@ -29,7 +29,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.7bf56d0a.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.c4a75a56.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.a0c5b2b5.min.css">
@@ -1201,7 +1201,7 @@
 <li><code>statelength(layer::CustomAbstractExplicitLayer)</code> – These can be automatically calculated, but it is recommended that the user defines these.</li>
 </ul>
 <p>See also <a href="./#LuxCore.AbstractExplicitContainerLayer"><code>AbstractExplicitContainerLayer</code></a></p>
-<p><a target='_blank' href='https://github.com/avik-pal/Lux.jl/blob/c9f43cc58b94fc18663c663cc86fc0a73a2934f4/lib/LuxCore/src/LuxCore.jl#L13-L34' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/avik-pal/Lux.jl/blob/8f78ca3694316b6b8926a9c2f4c3b3aa601c24fe/lib/LuxCore/src/LuxCore.jl#L13-L34' class='documenter-source'>source</a><br></p>
 <p><a id='LuxCore.AbstractExplicitContainerLayer' href='#LuxCore.AbstractExplicitContainerLayer'>#</a>
 <strong><code>LuxCore.AbstractExplicitContainerLayer</code></strong> &mdash; <em>Type</em>.</p>
 <div class="highlight"><pre><span></span><code><span class="kt">AbstractExplicitContainerLayer</span><span class="p">{</span><span class="kt">layers</span><span class="p">}</span><span class="w"> </span><span class="o">&lt;:</span><span class="w"> </span><span class="kt">AbstractExplicitLayer</span>
@@ -1212,7 +1212,7 @@
 <p class="admonition-title">Tip</p>
 <p>Advanced structure manipulation of these layers post construction is possible via <code>Functors.fmap</code>. For a more flexible interface, we recommend using the experimental feature <a href="@ref"><code>Lux.@layer_map</code></a>.</p>
 </div>
-<p><a target='_blank' href='https://github.com/avik-pal/Lux.jl/blob/c9f43cc58b94fc18663c663cc86fc0a73a2934f4/lib/LuxCore/src/LuxCore.jl#L108-L122' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/avik-pal/Lux.jl/blob/8f78ca3694316b6b8926a9c2f4c3b3aa601c24fe/lib/LuxCore/src/LuxCore.jl#L108-L122' class='documenter-source'>source</a><br></p>
 <p><a id='General'></a></p>
 <p><a id='General-1'></a></p>
 <h2 id="general">General<a class="headerlink" href="#general" title="Permanent link">¤</a></h2>
@@ -1221,7 +1221,7 @@
 <div class="highlight"><pre><span></span><code><span class="n">apply</span><span class="p">(</span><span class="n">model</span><span class="o">::</span><span class="kt">AbstractExplicitLayer</span><span class="p">,</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">ps</span><span class="p">,</span><span class="w"> </span><span class="n">st</span><span class="o">::</span><span class="kt">NamedTuple</span><span class="p">)</span>
 </code></pre></div>
 <p>Simply calls <code>model(x, ps, st)</code></p>
-<p><a target='_blank' href='https://github.com/avik-pal/Lux.jl/blob/c9f43cc58b94fc18663c663cc86fc0a73a2934f4/lib/LuxCore/src/LuxCore.jl#L92-L96' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/avik-pal/Lux.jl/blob/8f78ca3694316b6b8926a9c2f4c3b3aa601c24fe/lib/LuxCore/src/LuxCore.jl#L92-L96' class='documenter-source'>source</a><br></p>
 <p><a id='LuxCore.setup' href='#LuxCore.setup'>#</a>
 <strong><code>LuxCore.setup</code></strong> &mdash; <em>Function</em>.</p>
 <div class="highlight"><pre><span></span><code><span class="n">setup</span><span class="p">(</span><span class="n">rng</span><span class="o">::</span><span class="kt">AbstractRNG</span><span class="p">,</span><span class="w"> </span><span class="n">l</span><span class="o">::</span><span class="kt">AbstractExplicitLayer</span><span class="p">)</span>
@@ -1231,7 +1231,7 @@
 <p class="admonition-title">Warning</p>
 <p>This function is not pure, it mutates <code>rng</code>.</p>
 </div>
-<p><a target='_blank' href='https://github.com/avik-pal/Lux.jl/blob/c9f43cc58b94fc18663c663cc86fc0a73a2934f4/lib/LuxCore/src/LuxCore.jl#L78-L87' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/avik-pal/Lux.jl/blob/8f78ca3694316b6b8926a9c2f4c3b3aa601c24fe/lib/LuxCore/src/LuxCore.jl#L78-L87' class='documenter-source'>source</a><br></p>
 <p><a id='Parameters'></a></p>
 <p><a id='Parameters-1'></a></p>
 <h2 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">¤</a></h2>
@@ -1240,13 +1240,13 @@
 <div class="highlight"><pre><span></span><code><span class="n">initialparameters</span><span class="p">(</span><span class="n">rng</span><span class="o">::</span><span class="kt">AbstractRNG</span><span class="p">,</span><span class="w"> </span><span class="n">l</span><span class="p">)</span>
 </code></pre></div>
 <p>Generate the initial parameters of the layer <code>l</code>.</p>
-<p><a target='_blank' href='https://github.com/avik-pal/Lux.jl/blob/c9f43cc58b94fc18663c663cc86fc0a73a2934f4/lib/LuxCore/src/LuxCore.jl#L37-L41' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/avik-pal/Lux.jl/blob/8f78ca3694316b6b8926a9c2f4c3b3aa601c24fe/lib/LuxCore/src/LuxCore.jl#L37-L41' class='documenter-source'>source</a><br></p>
 <p><a id='LuxCore.parameterlength' href='#LuxCore.parameterlength'>#</a>
 <strong><code>LuxCore.parameterlength</code></strong> &mdash; <em>Function</em>.</p>
 <div class="highlight"><pre><span></span><code><span class="n">parameterlength</span><span class="p">(</span><span class="n">l</span><span class="p">)</span>
 </code></pre></div>
 <p>Return the total number of parameters of the layer <code>l</code>.</p>
-<p><a target='_blank' href='https://github.com/avik-pal/Lux.jl/blob/c9f43cc58b94fc18663c663cc86fc0a73a2934f4/lib/LuxCore/src/LuxCore.jl#L55-L59' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/avik-pal/Lux.jl/blob/8f78ca3694316b6b8926a9c2f4c3b3aa601c24fe/lib/LuxCore/src/LuxCore.jl#L55-L59' class='documenter-source'>source</a><br></p>
 <p><a id='States'></a></p>
 <p><a id='States-1'></a></p>
 <h2 id="states">States<a class="headerlink" href="#states" title="Permanent link">¤</a></h2>
@@ -1255,31 +1255,31 @@
 <div class="highlight"><pre><span></span><code><span class="n">initialstates</span><span class="p">(</span><span class="n">rng</span><span class="o">::</span><span class="kt">AbstractRNG</span><span class="p">,</span><span class="w"> </span><span class="n">l</span><span class="p">)</span>
 </code></pre></div>
 <p>Generate the initial states of the layer <code>l</code>.</p>
-<p><a target='_blank' href='https://github.com/avik-pal/Lux.jl/blob/c9f43cc58b94fc18663c663cc86fc0a73a2934f4/lib/LuxCore/src/LuxCore.jl#L47-L51' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/avik-pal/Lux.jl/blob/8f78ca3694316b6b8926a9c2f4c3b3aa601c24fe/lib/LuxCore/src/LuxCore.jl#L47-L51' class='documenter-source'>source</a><br></p>
 <p><a id='LuxCore.statelength' href='#LuxCore.statelength'>#</a>
 <strong><code>LuxCore.statelength</code></strong> &mdash; <em>Function</em>.</p>
 <div class="highlight"><pre><span></span><code><span class="n">statelength</span><span class="p">(</span><span class="n">l</span><span class="p">)</span>
 </code></pre></div>
 <p>Return the total number of states of the layer <code>l</code>.</p>
-<p><a target='_blank' href='https://github.com/avik-pal/Lux.jl/blob/c9f43cc58b94fc18663c663cc86fc0a73a2934f4/lib/LuxCore/src/LuxCore.jl#L68-L72' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/avik-pal/Lux.jl/blob/8f78ca3694316b6b8926a9c2f4c3b3aa601c24fe/lib/LuxCore/src/LuxCore.jl#L68-L72' class='documenter-source'>source</a><br></p>
 <p><a id='LuxCore.testmode' href='#LuxCore.testmode'>#</a>
 <strong><code>LuxCore.testmode</code></strong> &mdash; <em>Function</em>.</p>
 <div class="highlight"><pre><span></span><code><span class="n">testmode</span><span class="p">(</span><span class="n">st</span><span class="o">::</span><span class="kt">NamedTuple</span><span class="p">)</span>
 </code></pre></div>
 <p>Make all occurances of <code>training</code> in state <code>st</code> – <code>Val(false)</code>.</p>
-<p><a target='_blank' href='https://github.com/avik-pal/Lux.jl/blob/c9f43cc58b94fc18663c663cc86fc0a73a2934f4/lib/LuxCore/src/LuxCore.jl#L162-L166' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/avik-pal/Lux.jl/blob/8f78ca3694316b6b8926a9c2f4c3b3aa601c24fe/lib/LuxCore/src/LuxCore.jl#L162-L166' class='documenter-source'>source</a><br></p>
 <p><a id='LuxCore.trainmode' href='#LuxCore.trainmode'>#</a>
 <strong><code>LuxCore.trainmode</code></strong> &mdash; <em>Function</em>.</p>
 <div class="highlight"><pre><span></span><code><span class="n">trainmode</span><span class="p">(</span><span class="n">st</span><span class="o">::</span><span class="kt">NamedTuple</span><span class="p">)</span>
 </code></pre></div>
 <p>Make all occurances of <code>training</code> in state <code>st</code> – <code>Val(true)</code>.</p>
-<p><a target='_blank' href='https://github.com/avik-pal/Lux.jl/blob/c9f43cc58b94fc18663c663cc86fc0a73a2934f4/lib/LuxCore/src/LuxCore.jl#L169-L173' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/avik-pal/Lux.jl/blob/8f78ca3694316b6b8926a9c2f4c3b3aa601c24fe/lib/LuxCore/src/LuxCore.jl#L169-L173' class='documenter-source'>source</a><br></p>
 <p><a id='LuxCore.update_state' href='#LuxCore.update_state'>#</a>
 <strong><code>LuxCore.update_state</code></strong> &mdash; <em>Function</em>.</p>
 <div class="highlight"><pre><span></span><code><span class="n">update_state</span><span class="p">(</span><span class="n">st</span><span class="o">::</span><span class="kt">NamedTuple</span><span class="p">,</span><span class="w"> </span><span class="n">key</span><span class="o">::</span><span class="kt">Symbol</span><span class="p">,</span><span class="w"> </span><span class="n">value</span><span class="p">;</span><span class="w"> </span><span class="n">layer_check</span><span class="o">=</span><span class="n">_default_layer_check</span><span class="p">(</span><span class="n">key</span><span class="p">))</span>
 </code></pre></div>
 <p>Recursively update all occurances of the <code>key</code> in the state <code>st</code> with the <code>value</code>.</p>
-<p><a target='_blank' href='https://github.com/avik-pal/Lux.jl/blob/c9f43cc58b94fc18663c663cc86fc0a73a2934f4/lib/LuxCore/src/LuxCore.jl#L176-L180' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/avik-pal/Lux.jl/blob/8f78ca3694316b6b8926a9c2f4c3b3aa601c24fe/lib/LuxCore/src/LuxCore.jl#L176-L180' class='documenter-source'>source</a><br></p>
 <p><a id='Index'></a></p>
 <p><a id='Index-1'></a></p>
 <h2 id="index">Index<a class="headerlink" href="#index" title="Permanent link">¤</a></h2>
@@ -1308,10 +1308,10 @@
           
         </div>
         
-          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
             Back to top
-          </a>
+          </button>
         
       </main>
       
@@ -1341,7 +1341,7 @@
     <script id="__config" type="application/json">{"base": "../../..", "features": ["header.autohide", "navigation.top"], "search": "../../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.fc8c2696.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.efa0ade1.min.js"></script>
       
         <script src="../../../_static/mathjax.js"></script>
       
